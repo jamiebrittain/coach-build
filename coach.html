@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/main.css">
+
+  <title>Coach - Coach Compare</title>
+</head>
+<body class="antialiased bg-white flex flex-col min-h-screen">
+  <header class="relative py-6 bg-white border-b border-fog-grey">
+    <div class="max-w-main w-full mx-auto px-4 flex justify-between items-center md:justify-start md:space-x-10">
+      <div class="flex justify-start lg:w-0 lg:flex-1">
+        <a href="/">
+          <img src="./images/logo.svg" alt="Coach Compare">
+        </a>
+      </div>
+      
+      <div class="-mr-2 -my-2 md:hidden">
+        <button type="button" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-light-grey focus:outline-none focus:ring-0">
+          <span class="sr-only">Open menu</span>
+          <svg class="h-6 w-6" x-description="Heroicon name: outline/menu" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+        </button>
+      </div>
+      
+      <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0 grid gap-7">
+        <a href="#" class="text-sm font-bold text-dark-grey hover:text-cloud-grey">
+          Login
+        </a>
+        <a href="#" class="text-sm font-bold text-dark-grey hover:text-cloud-grey">
+          Register as a coach
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- coach -->
+  <main class="max-w-main w-full mx-auto px-4">
+    <div class="my-10">
+      <a href="/register" class="inline-flex items-center py-2 px-4 border border-transparent rounded-full text-xs font-bold text-white bg-stone-grey hover:bg-light-grey focus:outline-none">
+        <img src="./images/arrow-left.svg" class="w-4 h-4 mr-2" alt="Back">
+        
+        Back to results
+      </a>
+    </div>
+
+    <div class="max-w-5xl mx-auto">
+      <div class="grid grid-cols-1 items-start gap-x-9 md:grid-cols-3">
+        <div class="flex flex-col md:flex-row items-center space-y-0 md:space-x-9 col-span-3 order-2 md:order-1 mb-6 md:mb-10">
+          <div>
+            <div class="flex items-center mt-6">
+              <h1 class="inline-block text-xl md:text-3xl font-bold text-dark-grey">Bessie Cooper</h1>
+              <!-- if verified -->
+              <svg class="inline-block ml-2" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.33333 11.9999C2.33333 6.66117 6.66125 2.33325 12 2.33325C17.3388 2.33325 21.6667 6.66117 21.6667 11.9999C21.6667 17.3387 17.3388 21.6666 12 21.6666C6.66125 21.6666 2.33333 17.3387 2.33333 11.9999Z" stroke="#515C62" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M8 12.6667L10.6667 15.3333L16 10" stroke="#515C62" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>          
+            </div>
+
+            <p class="text-md md:text-base text-light-grey mt-2 md:mt-4">I was once that person, who thought the possible was impossible. I proved it wrong.I was once that person, who thought the possible was impossible. I proved it wrong.</p>
+
+            <!-- categories -->
+            <div class="my-6">
+              <ul role="list" class="flex space-x-2">
+                <!-- repeat -->
+                <li>
+                  <a href="/couples" class="relative inline-flex justify-center items-center bg-tortilla hover:bg-pale-ivory rounded text-xs font-semibold text-white py-1 px-2 z-10">
+                    Couples
+                  </a>
+                </li>
+                <!-- end repeat -->
+                <li>
+                  <a href="/marriage" class="relative inline-flex justify-center items-center bg-tortilla hover:bg-pale-ivory rounded text-xs font-semibold text-white py-1 px-2 z-10">
+                    Marriage
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-2 md:ml-auto md:w-auto w-full">
+            <a href="#" class="block w-full md:w-auto items-center py-2.5 px-8 rounded-full text-center text-sm font-bold text-dark-grey hover:text-white whitespace-nowrap bg-fog-grey hover:bg-light-grey focus:outline-none">
+              View website
+            </a>
+
+            <a href="#" class="block w-full md:w-auto items-center py-2.5 px-8 rounded-full text-center text-sm font-bold text-white whitespace-nowrap bg-light-grey hover:bg-dark-grey focus:outline-none">
+              Send message
+            </a>
+          </div>
+        </div>
+
+        <div class="col-span-3 md:col-span-1 order-1 md:order-2">
+          <div class="aspect-square max-w-xs md:max-w-full">
+            <img class="object-cover rounded-lg border border-black/[.10] w-full h-auto" src="./images/coach-example.png" alt="Coach">
+          </div>
+
+          <div class="hidden md:block py-8 space-y-8">
+            <div>
+              <div class="text-base md:text-xl font-medium md:font-semibold text-dark-grey mb-4">Location</div>
+
+              <ul role="list">
+                <li class="flex flex-row items-center py-2.5 px-3 odd:bg-off-white/[.3] rounded-md text-xs font-semibold text-dark-grey">
+                  <img class="inline-block mr-2" src="./images/location.svg">
+                  United Kingdom
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="text-base md:text-xl font-medium md:font-semibold text-dark-grey mb-4">Certification</div>
+
+              <ul role="list">
+                <li class="flex flex-row items-start py-2.5 px-3 odd:bg-off-white/[.3] rounded-md text-xs font-semibold text-dark-grey">
+                  <img class="inline-block mr-2" src="./images/certifications.svg">
+                  Certified Holistic Health Coach
+                </li>
+
+                <li class="flex flex-row items-start py-2.5 px-3 odd:bg-off-white/[.3] rounded-md text-xs font-semibold text-dark-grey">
+                  <img class="inline-block mr-2" src="./images/certifications.svg">
+                  UKHCA Approved Health Coach
+                </li>
+
+                <li class="flex flex-row items-start py-2.5 px-3 odd:bg-off-white/[.3] rounded-md text-xs font-semibold text-dark-grey">
+                  <img class="inline-block mr-2" src="./images/certifications.svg">
+                  RSPH Level 3 Certificate in Health Coaching
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <div class="text-base md:text-xl font-medium md:font-semibold text-dark-grey mb-4">Type of clients</div>
+
+              <ul role="list">
+                <li class="flex flex-row items-start py-2.5 px-3 odd:bg-off-white/[.3] rounded-md text-xs font-semibold text-dark-grey">
+                  <img class="inline-block mr-2" src="./images/person.svg">
+                  Business Women
+                </li>
+
+                <li class="flex flex-row items-start py-2.5 px-3 odd:bg-off-white/[.3] rounded-md text-xs font-semibold text-dark-grey">
+                  <img class="inline-block mr-2" src="./images/person.svg">
+                  Single Parents
+                </li>
+
+                <li class="flex flex-row items-start py-2.5 px-3 odd:bg-off-white/[.3] rounded-md text-xs font-semibold text-dark-grey">
+                  <img class="inline-block mr-2" src="./images/person.svg">
+                  Runners
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-span-3 md:col-span-2 order-3 md:order-3">
+          <h2 class="text-xl font-bold text-dark-grey mb-4">About Bessie</h2>
+
+          <p class="text-sm text-light-grey mt-5">Mindfulness-based coach and former startup director with more than 10 years experience in tech, within the mental healthy industry</p>
+          <p class="text-sm text-light-grey mt-5">As your coach, I'll help you get unstuck, relieve stress, gain confidence and clarity, and help you become the best version of yourself.</p>
+          <p class="text-sm text-light-grey mt-5">No gimmmicks. No quick tricks. I am with you on your journey. I am passionate about helping people achieve their goals. I was once that person, who thought the possible was impossible. I proved it wrong, and I’m here to prove your impossible wrong, too.<p>
+          <p class="text-sm text-light-grey mt-5">No matter your goal—whether you want to drink less, stop drinking, or frankly aren’t sure what you want—time away from alcohol is the most powerful tool at your disposal. A break gives you a clean slate to understand why you formed the habit, what’s getting in the way of change, and how to redefine your relationship with alcohol.</p>
+          <p class="text-sm text-light-grey mt-5">It starts with a 30-day challenge, and from there, you can continue on a year-long journey exploring the deeper work. Take a Break combines self-study lessons and live coaching to radically change your understanding of your desire and how to say no without deprivation. <br>Here’s a taste of what you’ll learn:</p>
+          <p class="text-sm text-light-grey mt-5">THE FOUR PILLARS<br>
+            The roadmap to retrain your brain and change your desire. Learn about urges, the habit, why it’s hard to follow through on your commitments, and how to manage your mind.</p>
+          <p class="text-sm text-light-grey mt-5">AVOIDING NUMBING<br>
+            Develop emotional resilience so that you can break the cycle of drinking, eating, shopping, working, or anything else that distracts from how you feel.</p>
+          <p class="text-sm text-light-grey mt-5">CONQUERING STRESS & OVERWHELM<br>
+            Access your innate ability to solve any problem so that you no longer search for a drink (or something else) to take the edge off.</p>
+          <p class="text-sm text-light-grey mt-5">CULTIVATING PLEASURE<br>
+            Unlock more enjoyment in your everyday life so that you stop relying on instant gratification and false pleasures to feel good.</p>
+          <p class="text-sm text-light-grey mt-5">RECONNECTING TO YOUR BODY<br>
+            Repair the connection with your physical self and what you see in the mirror so that you can feel better from the inside out.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="block md:hidden py-10 space-y-8">
+      <div>
+        <div class="text-base md:text-xl font-medium md:font-semibold text-dark-grey mb-4">Location</div>
+
+        <ul role="list">
+          <li class="flex flex-row items-center py-2.5 px-3 odd:bg-off-white/[.3] rounded-md text-xs font-semibold text-dark-grey">
+            <img class="inline-block mr-2" src="./images/location.svg">
+            United Kingdom
+          </li>
+
+        </ul>
+      </div>
+
+      <div>
+        <div class="text-base md:text-xl font-medium md:font-semibold text-dark-grey mb-4">Certification</div>
+
+        <ul role="list">
+          <li class="flex flex-row items-start py-2.5 px-3 odd:bg-off-white/[.3] rounded-md text-xs font-semibold text-dark-grey">
+            <img class="inline-block mr-2" src="./images/certifications.svg">
+            Certified Holistic Health Coach
+          </li>
+
+          <li class="flex flex-row items-start py-2.5 px-3 odd:bg-off-white/[.3] rounded-md text-xs font-semibold text-dark-grey">
+            <img class="inline-block mr-2" src="./images/certifications.svg">
+            UKHCA Approved Health Coach
+          </li>
+
+          <li class="flex flex-row items-start py-2.5 px-3 odd:bg-off-white/[.3] rounded-md text-xs font-semibold text-dark-grey">
+            <img class="inline-block mr-2" src="./images/certifications.svg">
+            RSPH Level 3 Certificate in Health Coaching
+          </li>
+        </ul>
+      </div>
+
+      <div>
+        <div class="text-base md:text-xl font-medium md:font-semibold text-dark-grey mb-4">Type of clients</div>
+
+        <ul role="list">
+          <li class="flex flex-row items-start py-2.5 px-3 odd:bg-off-white/[.3] rounded-md text-xs font-semibold text-dark-grey">
+            <img class="inline-block mr-2" src="./images/person.svg">
+            Business Women
+          </li>
+
+          <li class="flex flex-row items-start py-2.5 px-3 odd:bg-off-white/[.3] rounded-md text-xs font-semibold text-dark-grey">
+            <img class="inline-block mr-2" src="./images/person.svg">
+            Single Parents
+          </li>
+
+          <li class="flex flex-row items-start py-2.5 px-3 odd:bg-off-white/[.3] rounded-md text-xs font-semibold text-dark-grey">
+            <img class="inline-block mr-2" src="./images/person.svg">
+            Runners
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="hidden md:block max-w-5xl mx-auto py-20">
+      <div class="text-base text-light-grey font-semibold mb-8">More coaches</div>
+
+      <ul role="list" class="grid sm:gap-x-6 gap-y-6 md:grid-cols-2 lg:grid-cols-3 lg:gap-x-6 -mx-4">
+        <li>
+          <div class="flex flex-row relative p-4 rounded-2xl border border-transparent transition duration-300 ease-out hover:bg-white hover:border-off-white hover:shadow-coach transition">
+            <a href="#" class="absolute top-0 left-0 w-full h-full"></a>
+
+            <div class="aspect-square w-20 h-20 mr-4">
+              <img class="object-cover rounded-lg border border-black/[.10]" src="./images/coach-example.png" alt="Coach">
+            </div>
+
+            <div class="space-y-2">
+              <div class="space-y-1">
+                <h3 class="text-base font-bold text-dark-grey">Sarah Gonzalez</h3>
+                <p class="text-sm font-medium text-light-grey max-h-10 line-clamp-2">A brief description about the coach and what they do that is unique.</p>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="flex flex-row relative p-4 rounded-2xl border border-transparent transition duration-300 ease-out hover:bg-white hover:border-off-white hover:shadow-coach transition">
+            <a href="#" class="absolute top-0 left-0 w-full h-full"></a>
+
+            <div class="aspect-square w-20 h-20 mr-4">
+              <img class="object-cover rounded-lg border border-black/[.10]" src="./images/coach-example.png" alt="Coach">
+            </div>
+
+            <div class="space-y-2">
+              <div class="space-y-1">
+                <h3 class="text-base font-bold text-dark-grey">Sarah Gonzalez</h3>
+                <p class="text-sm font-medium text-light-grey max-h-10 line-clamp-2">A brief description about the coach and what they do that is unique.</p>
+              </div>
+            </div>
+          </div>
+        </li>
+
+        <li>
+          <div class="flex flex-row relative p-4 rounded-2xl border border-transparent transition duration-300 ease-out hover:bg-white hover:border-off-white hover:shadow-coach transition">
+            <a href="#" class="absolute top-0 left-0 w-full h-full"></a>
+
+            <div class="aspect-square w-20 h-20 mr-4">
+              <img class="object-cover rounded-lg border border-black/[.10]" src="./images/coach-example.png" alt="Coach">
+            </div>
+
+            <div class="space-y-2">
+              <div class="space-y-1">
+                <h3 class="text-base font-bold text-dark-grey">Sarah Gonzalez</h3>
+                <p class="text-sm font-medium text-light-grey max-h-10 line-clamp-2">A brief description about the coach and what they do that is unique.</p>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </main>
+
+  <footer class="bg-dark-grey mt-auto">
+    <div class="max-w-main mx-auto px-5 py-8 md:flex md:items-center md:justify-between">
+      <div class="mb-4 md:mb-0 md:order-1">
+        <p class="text-center text-xs text-stone-grey">
+          &copy; 2022 Coach Compare. All rights reserved.
+        </p>
+      </div>
+
+      <div class="flex flex-col md:flex-row items-center justify-center md:order-2">
+        <div class="flex space-x-6 mb-4 md:mb-0">
+          <a href="#" class="text-xs text-stone-grey">Search</a>
+    
+          <a href="#" class="text-xs text-stone-grey">Terms</a>
+    
+          <a href="#" class="text-xs text-stone-grey">Privacy</a>
+    
+          <a href="#" class="text-xs text-stone-grey">Contact</a>
+        </div>
+        <div class="ml-0 md:ml-4">
+          <a href="#" class="text-stone-grey">
+            <span class="sr-only">Twitter</span>
+            <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

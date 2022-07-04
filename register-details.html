@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/main.css">
+
+  <title>Register as a coach - Coach Compare</title>
+</head>
+<body class="antialiased bg-off-white flex flex-col min-h-screen">
+  <header class="relative py-6 sm:py-6 px-4 md:px-10 lg:px-16">
+    <div class="flex justify-center items-center md:justify-start md:space-x-10">
+      <div class="flex justify-start lg:w-0 lg:flex-1">
+        <a href="/">
+          <img src="./images/logo.svg" alt="Coach Compare">
+        </a>
+      </div>
+      
+      <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0 grid gap-7">
+        <div class="flex flex-row items-center text-sm font-bold text-light-grey">
+          <div class="flex flex-col justify-center items-center w-6 h-6 rounded overflow-hidden mr-1.5">
+            <img class="w-6 h-auto" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80">
+          </div>
+            <span>Bessie Cooper</span>
+        </div>
+        <a href="#" class="py-2.5 px-5 border border-transparent rounded-full text-sm font-bold text-white bg-light-grey hover:bg-pale-ivory focus:outline-none">
+          Logout
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <div class="flex flex-col justify-center px-4 md:py-10 md:px-8">
+    <div class="sm:mx-auto sm:w-full sm:max-w-3xl">
+      <div class="bg-white p-8 shadow-box rounded-xl sm:p-12">
+        <!-- if error, show this -->
+        <div class="mb-8 p-2.5 bg-muji-red/[.10] rounded-lg text-center text-xs text-muji-red font-medium">
+          <p>To complete your profile, you must agree to the Privacy Policy, and Terms & Conditions</p>
+        </div>
+        <!-- end if -->
+
+        <div class="text-center mb-8">
+          <h1 class="text-xl text-dark-grey font-semibold text-center">
+            Welcome to CoachCompare
+          </h1>
+
+          <p class="text-sm text-light-grey font-medium mt-2.5">
+            Fill out a few more details to complete your profile.
+          </p>
+        </div>
+
+        <form action="#" method="POST">
+          <div>
+            <label for="dropzone-file" class="relative block w-24 h-24 mx-auto bg-fog-grey rounded-lg overflow-hidden ring-1 ring-inset ring-black/[.10] cursor-pointer">
+              <!-- if image -->
+              <div class="flex flex-col justify-center items-center w-24 h-24 overflow-hidden">
+                <svg class="w-6 h-6 fill-white absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9 2C7.89543 2 7 2.89543 7 4C7 4.55228 6.55228 5 6 5H3C1.34315 5 0 6.34315 0 8V19C0 20.6569 1.34315 22 3 22H21C22.6569 22 24 20.6569 24 19V8C24 6.34315 22.6569 5 21 5H18C17.4477 5 17 4.55228 17 4C17 2.89543 16.1046 2 15 2H9ZM17 13C17 15.7614 14.7614 18 12 18C9.23858 18 7 15.7614 7 13C7 10.2386 9.23858 8 12 8C14.7614 8 17 10.2386 17 13ZM12 16C13.6569 16 15 14.6569 15 13C15 11.3431 13.6569 10 12 10C10.3431 10 9 11.3431 9 13C9 14.6569 10.3431 16 12 16Z" />
+                </svg>
+                <img class="w-24 h-auto" src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1887&q=80">
+              </div>
+              <!-- end if -->
+
+              <!-- if no image -->
+              <!-- <div class="flex flex-col justify-center items-center p-9">
+                <svg class="w-6 h-6 fill-dark-grey absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M9 2C7.89543 2 7 2.89543 7 4C7 4.55228 6.55228 5 6 5H3C1.34315 5 0 6.34315 0 8V19C0 20.6569 1.34315 22 3 22H21C22.6569 22 24 20.6569 24 19V8C24 6.34315 22.6569 5 21 5H18C17.4477 5 17 4.55228 17 4C17 2.89543 16.1046 2 15 2H9ZM17 13C17 15.7614 14.7614 18 12 18C9.23858 18 7 15.7614 7 13C7 10.2386 9.23858 8 12 8C14.7614 8 17 10.2386 17 13ZM12 16C13.6569 16 15 14.6569 15 13C15 11.3431 13.6569 10 12 10C10.3431 10 9 11.3431 9 13C9 14.6569 10.3431 16 12 16Z" />
+                </svg>
+              </div> -->
+              <!-- end if -->
+              <input id="dropzone-file" type="file" class="hidden" />
+            </label>
+          </div>
+
+          <div class="py-8 border-b border-dashed border-off-white">
+            <div class="text-base font-medium text-dark-grey mb-4">About you</div>
+
+            <div class="grid grid-cols-1 gap-y-4 gap-x-4 sm:grid-cols-6">
+              <div class="sm:col-span-3">
+                <input type="text" placeholder="First name" required class="appearance-none block w-full px-4 py-2 border border-fog-grey hover:border-cloud-grey focus:border-sky-blue rounded-full placeholder-light-grey text-sm font-medium focus:placeholder-cloud-grey focus:outline-none focus:ring-2 focus:ring-black/[.10]">
+              </div>
+
+              <div class="sm:col-span-3">
+                <input type="text" placeholder="Last name" required class="appearance-none block w-full px-4 py-2 border border-fog-grey hover:border-cloud-grey focus:border-sky-blue rounded-full placeholder-light-grey text-sm font-medium focus:placeholder-cloud-grey focus:outline-none focus:ring-2 focus:ring-black/[.10]">
+              </div>
+
+              <div class="sm:col-span-6">
+                <input type="text" placeholder="Tagline" required class="appearance-none block w-full px-4 py-2 border border-fog-grey hover:border-cloud-grey focus:border-sky-blue rounded-full placeholder-light-grey text-sm font-medium focus:placeholder-cloud-grey focus:outline-none focus:ring-2 focus:ring-black/[.10]">
+              </div>
+
+              <div class="sm:col-span-6">
+                <input type="text" placeholder="About you" required class="appearance-none block w-full px-4 py-2 border border-fog-grey hover:border-cloud-grey focus:border-sky-blue rounded-full placeholder-light-grey text-sm font-medium focus:placeholder-cloud-grey focus:outline-none focus:ring-2 focus:ring-black/[.10]">
+              </div>
+
+              <div class="sm:col-span-3">
+                <input type="text" placeholder="Website" required class="appearance-none block w-full px-4 py-2 border border-fog-grey hover:border-cloud-grey focus:border-sky-blue rounded-full placeholder-light-grey text-sm font-medium focus:placeholder-cloud-grey focus:outline-none focus:ring-2 focus:ring-black/[.10]">
+              </div>
+
+              <div class="sm:col-span-3">
+                <input type="text" placeholder="name@coach.com" required class="appearance-none block w-full px-4 py-2 border border-fog-grey hover:border-cloud-grey focus:border-sky-blue rounded-full placeholder-cloud-grey text-sm font-medium focus:placeholder-cloud-grey focus:outline-none focus:ring-2 focus:ring-black/[.10]">
+              </div>
+
+              <div class="sm:col-span-3">
+                <select id="country" name="country" autocomplete="country-name" class="appearance-none block w-full px-4 py-2 border border-fog-grey hover:border-cloud-grey focus:border-sky-blue rounded-full placeholder-light-grey text-sm font-medium focus:placeholder-cloud-grey focus:outline-none focus:ring-2 focus:ring-black/[.10]">
+                  <option disabled selected>Country</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="py-8 border-b border-dashed border-off-white">
+            <div class="text-base font-medium text-dark-grey mb-4">Categories</div>
+
+            <div class="relative">
+              <input type="text" placeholder="Search for categories of expertise" required class="appearance-none block w-full px-4 py-2 pr-16 border border-fog-grey hover:border-cloud-grey focus:border-sky-blue rounded-full placeholder-light-grey text-sm font-medium focus:placeholder-cloud-grey focus:outline-none focus:ring-2 focus:ring-black/[.10]">
+              <button class="absolute top-1.5 right-1.5 flex justify-center items-center px-4 py-2 border border-transparent rounded-full text-sm font-bold text-white bg-cloud-grey hover:bg-dark-grey focus:outline-none">
+                <img src="./images/plus.svg" class="w-2 h-2" alt="Add">
+              </button>
+
+              <!-- Dropdown found below -->
+              <!-- <ul class="absolute z-10 mt-2 max-h-72 w-full overflow-auto rounded-lg bg-white py-1 text-xs shadow-dropdown" role="listbox">
+                <div class="relative cursor-default select-none py-2 px-3 text-cloud-grey">
+                  Select category
+                </div>
+
+                <li class="relative cursor-pointer select-none py-2 px-3 text-dark-grey hover:bg-off-white" role="option" tabindex="-1">
+                  <span class="block truncate">Health Coaches</span>
+                </li>
+                <li class="relative cursor-pointer select-none py-2 px-3 text-dark-grey hover:bg-off-white" role="option" tabindex="-1">
+                  <span class="block truncate">Health and Wellness Coaches</span>
+                </li>
+              </ul> -->
+            </div>
+
+            <!-- categories -->
+            <div class="flex flex-row flex-wrap gap-x-2 gap-y-2 mt-4">
+              <!-- repeat -->
+              <div class="inline-flex justify-center items-center bg-fog-grey rounded text-xs font-semibold text-light-grey py-1 px-2">
+                Mental Health
+
+                <button class="ml-1 inline-flex">
+                  <img src="./images/delete.svg" alt="Delete">
+                </button>
+              </div>
+              <!-- end repeat -->
+            </div>
+          </div>
+
+          <div class="py-8 border-b border-dashed border-off-white">
+            <div class="text-base font-medium text-dark-grey mb-4">Type of clients</div>
+
+            <button class="w-full flex justify-center items-center p-2 border border-transparent rounded-full text-sm font-bold text-white bg-cloud-grey hover:bg-light-grey focus:outline-none">
+              <img src="./images/plus.svg" class="w-2 h-2 mr-2.5" alt="Add">
+
+              Add new certification
+            </button>
+
+            <!-- types of clients -->
+            <div class="flex flex-col gap-x-4 mt-4">
+              <!-- repeat -->
+              <div class="relative">
+                <input type="text" placeholder="Type of client" required class="appearance-none block w-full px-4 py-2 pr-16 border border-fog-grey hover:border-cloud-grey focus:border-sky-blue rounded-full placeholder-light-grey text-sm font-medium focus:placeholder-cloud-grey focus:outline-none focus:ring-2 focus:ring-black/[.10]">
+                
+                <button class="absolute top-1.5 right-1.5 flex justify-center items-center px-4 py-2 border border-transparent rounded-full text-sm font-bold focus:outline-none">
+                  <img src="./images/delete-red.svg" class="w-2 h-2" alt="Delete">
+                </button>
+              </div>
+              <!-- end repeat -->
+            </div>
+          </div>
+
+          <div class="py-8 border-b border-dashed border-off-white">
+            <div class="flex justify-center items-center">
+              <input id="terms" name="terms" type="checkbox" class="h-3.5 w-3.5 mr-2 hover:cursor-pointer text-light-grey border-stone-grey rounded shadow-none checked:bg-white checked:text-light-grey checked:border-stone-grey focus:ring-0 focus:ring-offset-0 checked:ring-0">
+              
+              <label for="terms" class="text-sm text-light-grey font-medium hover:cursor-pointer">
+                I agree to the <a href="#" class="text-cloud-grey hover:text-light-grey border-b">Privacy Policy</a> and <a href="#" class="text-cloud-grey hover:text-light-grey border-b">Terms &amp; Conditions</a>
+              </label>
+            </div>
+          </div>
+
+          <div class="sm:col-span-6">
+            <button type="submit" class="w-full flex justify-center items-center p-2.5 border border-transparent rounded-full text-sm font-bold text-white bg-light-grey hover:bg-dark-grey focus:outline-none">
+              Complete profile
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <footer class="bg-transparent mt-auto">
+    <div class="w-full mx-auto px-16 py-8 md:flex md:items-center md:justify-between">
+      <div class="mb-4 md:mb-0 md:order-1">
+        <p class="text-center text-xs text-stone-grey">
+          &copy; 2022 Coach Compare. All rights reserved.
+        </p>
+      </div>
+
+      <div class="flex flex-col md:flex-row items-center justify-center md:order-2">
+        <div class="flex space-x-6 mb-4 md:mb-0">
+          <a href="#" class="text-xs text-stone-grey">Search</a>
+    
+          <a href="#" class="text-xs text-stone-grey">Terms</a>
+    
+          <a href="#" class="text-xs text-stone-grey">Privacy</a>
+    
+          <a href="#" class="text-xs text-stone-grey">Contact</a>
+        </div>
+        <div class="ml-0 md:ml-4">
+          <a href="#" class="text-stone-grey">
+            <span class="sr-only">Twitter</span>
+            <svg class="h-4 w-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.713v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84" />
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
