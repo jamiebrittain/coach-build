@@ -271,27 +271,29 @@
       </li>
     </ul>
 
-    <nav class="relative z-0 flex flex-wrap items-center justify-center space-x-2 py-8 md:py-20" aria-label="Pagination">
-      <a href="#" class="min-w-[106px] justify-center relative inline-flex items-center px-3 py-2 rounded-3xl border-2 border-fog-grey bg-white hover:bg-fog-grey text-xs leading-3 font-bold text-dark-grey">
+    <nav class="relative z-0 flex flex-wrap items-center justify-center space-x-2 py-10 md:py-20" aria-label="Pagination">
+      <a href="#" class="order-2 sm:order-1 min-w-[106px] justify-center relative inline-flex items-center px-3 py-2 rounded-3xl border-2 border-fog-grey bg-white hover:bg-fog-grey text-xs leading-3 font-bold text-dark-grey">
         <svg class="mr-2.5" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M8 10L4 6L8 2" stroke="#A3AFAF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
         Previous
       </a>
 
-      <!-- Current: "z-10 bg-pale-ivory text-white relative inline-flex items-center px-3.5 py-2 rounded-3xl text-xs font-bold",
-            Default: "bg-white hover:bg-off-white text-light-grey relative inline-flex items-center px-3.5 py-2 rounded-3xl text-xs font-bold"
-      -->
-      <a href="#" aria-current="page" class="z-10 bg-pale-ivory text-white relative inline-flex items-center px-4 py-2 rounded-3xl text-xs font-bold"> 1 </a>
+      <div class="flex order-1 sm:order-2 flex-[1_100%] sm:flex-none justify-center items-center mb-5 sm:mb-0">
+        <!-- Current: "z-10 bg-pale-ivory text-white relative inline-flex items-center px-3.5 py-2 rounded-3xl text-xs font-bold",
+              Default: "bg-white hover:bg-off-white text-light-grey relative inline-flex items-center px-3.5 py-2 rounded-3xl text-xs font-bold"
+        -->
+        <a href="#" aria-current="page" class="z-10 bg-pale-ivory text-white relative inline-flex items-center px-4 py-2 rounded-3xl text-xs font-bold"> 1 </a>
 
-      <a href="#" class="bg-white hover:bg-off-white text-light-grey relative inline-flex items-center px-4 py-2 rounded-3xl text-xs font-bold"> 2 </a>
-      <a href="#" class="bg-white hover:bg-off-white text-light-grey relative inline-flex items-center px-4 py-2 rounded-3xl text-xs font-bold"> 3 </a>
-      <span class="text-light-grey relative inline-flex items-center px-3.5 py-2 text-xs font-bold"> ... </span>
-      <a href="#" class="bg-white hover:bg-off-white text-light-grey relative inline-flex items-center px-4 py-2 rounded-3xl text-xs font-bold"> 8 </a>
-      <a href="#" class="bg-white hover:bg-off-white text-light-grey relative inline-flex items-center px-4 py-2 rounded-3xl text-xs font-bold"> 9 </a>
-      <a href="#" class="bg-white hover:bg-off-white text-light-grey relative inline-flex items-center px-4 py-2 rounded-3xl text-xs font-bold"> 10 </a>
+        <a href="#" class="bg-white hover:bg-off-white text-light-grey relative inline-flex items-center px-4 py-2 rounded-3xl text-xs font-bold"> 2 </a>
+        <a href="#" class="bg-white hover:bg-off-white text-light-grey relative inline-flex items-center px-4 py-2 rounded-3xl text-xs font-bold"> 3 </a>
+        <span class="text-light-grey relative inline-flex items-center px-3.5 py-2 text-xs font-bold"> ... </span>
+        <a href="#" class="bg-white hover:bg-off-white text-light-grey relative inline-flex items-center px-4 py-2 rounded-3xl text-xs font-bold"> 8 </a>
+        <a href="#" class="bg-white hover:bg-off-white text-light-grey relative inline-flex items-center px-4 py-2 rounded-3xl text-xs font-bold"> 9 </a>
+        <a href="#" class="bg-white hover:bg-off-white text-light-grey relative inline-flex items-center px-4 py-2 rounded-3xl text-xs font-bold"> 10 </a>
+      </div>
 
-      <a href="#" class="min-w-[106px] justify-center relative inline-flex items-center px-3 py-2 rounded-3xl border-2 border-fog-grey bg-white hover:bg-fog-grey text-xs leading-3 font-bold text-dark-grey">
+      <a href="#" class="order-3 sm:order-3 min-w-[106px] justify-center relative inline-flex items-center px-3 py-2 rounded-3xl border-2 border-fog-grey bg-white hover:bg-fog-grey text-xs leading-3 font-bold text-dark-grey">
         Next
         <svg class="ml-2.5" width="12" height="12" viewBox="0 0 12 12" fill="none" xmlns="http://www.w3.org/2000/svg">
           <path d="M4 2L8 6L4 10" stroke="#A3AFAF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
@@ -329,5 +331,12 @@
       </div>
     </div>
   </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    $('.mobile-toggle').click(function() {
+      $('body').toggleClass('menu-open');
+    });
+  </script>
 </body>
 </html>
