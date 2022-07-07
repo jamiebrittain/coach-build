@@ -16,7 +16,7 @@
   <title>Home - Coach Compare</title>
 </head>
 <body class="antialiased bg-white flex flex-col min-h-screen">
-  <header class="relative py-6 bg-white border-b border-fog-grey">
+  <header id="header" class="flex flex-col relative py-6 bg-white border-b border-fog-grey items-stretch transition transition-all duration-500 delay-150 ease-in-out">
     <div class="max-w-main w-full mx-auto px-5 flex justify-between items-center md:justify-start md:space-x-10">
       <div class="flex justify-start lg:w-0 lg:flex-1">
         <a href="/">
@@ -24,8 +24,8 @@
         </a>
       </div>
       
-      <div class="-mr-2 -my-2 md:hidden">
-        <button type="button" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-light-grey focus:outline-none focus:ring-0">
+      <div class="-mr-2 -my-2 sm:hidden">
+        <button type="button" class="mobile-toggle p-2 inline-flex items-center justify-center text-light-grey focus:outline-none focus:ring-0">
           <span class="sr-only">Open menu</span>
           <svg class="h-6 w-6" x-description="Heroicon name: outline/menu" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
@@ -33,7 +33,7 @@
         </button>
       </div>
       
-      <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0 grid gap-7">
+      <div class="hidden sm:flex items-center justify-end sm:flex-1 rid gap-7">
         <a href="#" class="text-sm font-bold text-dark-grey hover:text-cloud-grey">
           Login
         </a>
@@ -41,6 +41,20 @@
           Register as a coach
         </a>
       </div>
+    </div>
+
+    <div class="mobile-menu flex sm:hidden flex-col space-y-10 items-center mt-auto mb-auto py-12 overflow-y-scroll overflow-y-auto transition-opacity ease-in-out opacity-0">
+      <a href="#" class="text-3xl font-medium text-light-grey hover:text-dark-grey">Search</a>
+
+      <a href="#" class="text-3xl font-medium text-light-grey hover:text-dark-grey">Login</a>
+
+      <a href="#" class="text-3xl font-medium text-light-grey hover:text-dark-grey">Register</a>
+
+      <a href="#" class="text-3xl font-medium text-light-grey hover:text-dark-grey">Terms</a>
+
+      <a href="#" class="text-3xl font-medium text-light-grey hover:text-dark-grey">Privacy</a>
+
+      <a href="#" class="text-3xl font-medium text-light-grey hover:text-dark-grey">About</a>
     </div>
   </header>
 
@@ -112,7 +126,7 @@
 
   <!-- coaches -->
   <main class="max-w-main w-full mx-auto px-5">
-    <div class="flex items-center justify-between mb-6">
+    <div class="hidden sm:flex items-center justify-between mb-6">
       <div class="font-base font-semibold text-light-grey">Coaches</div>
 
       <a href="/register" class="inline-flex items-center py-2 px-4 border border-transparent rounded-full text-xs font-bold text-white bg-stone-grey hover:bg-light-grey focus:outline-none">
@@ -297,16 +311,26 @@
         </div>
       </li>
     </ul>
+
+    <div class="flex sm:hidden justify-center items-center mt-6">
+      <a href="/register" class="inline-flex items-center py-2 px-4 border border-transparent rounded-full text-xs font-bold text-white bg-stone-grey hover:bg-light-grey focus:outline-none">
+        View all
+
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg" class="w-4 h-4 ml-2 stroke-white">
+          <path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
   </main>
 
   <div class="max-w-main mx-auto px-5 py-8 md:py-20">
-    <div class="bg-fog-grey shadow-box-light rounded-[12px] overflow-hidden lg:grid lg:grid-cols-2 lg:gap-4 px-8 sm:px-16">
-      <div class="py-8 sm:py-16">
+    <div class="bg-fog-grey shadow-box-light rounded-[12px] overflow-hidden md:grid md:grid-cols-2 gap-9 px-8 lg:px-16">
+      <div class="my-auto py-8">
         <div class="lg:self-center">
-          <h2 class="text-2xl font-semibold text-dark-grey">
+          <h2 class="text-lg md:text-2xl font-semibold text-dark-grey">
           Register as a coach
           </h2>
-          <p class="mt-2 text-base text-dark-grey font-medium">
+          <p class="mt-2 text-sm md:text-base text-dark-grey font-medium">
             Want to add yourself to the directory? Register as a coach, fill in your details, and allow people to contact you for your coaching skills.
           </p>
           <a href="#" class="inline-block mt-6 py-2.5 px-5 border border-transparent rounded-full text-sm font-bold text-white bg-dark-grey hover:bg-pale-ivory focus:outline-none">
@@ -314,7 +338,7 @@
           </a>
         </div>
       </div>
-      <div class="flex justify-end aspect-w-5 aspect-h-3 md:aspect-w-2 md:aspect-h-1">
+      <div class="hidden md:flex justify-end">
         <img class="max-h-72" src="./images/cta-image.png" ata="Register as a coach">
       </div>
     </div>
@@ -349,5 +373,12 @@
       </div>
     </div>
   </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    $('.mobile-toggle').click(function() {
+      $('body').toggleClass('menu-open');
+    });
+  </script>
 </body>
 </html>

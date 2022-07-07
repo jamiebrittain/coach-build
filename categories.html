@@ -16,7 +16,7 @@
   <title>Categories - Coach Compare</title>
 </head>
 <body class="antialiased bg-white flex flex-col min-h-screen">
-  <header class="relative py-6 bg-white border-b border-fog-grey">
+  <header id="header" class="flex flex-col relative py-6 bg-white border-b border-fog-grey items-stretch transition transition-all duration-500 delay-150 ease-in-out">
     <div class="max-w-main w-full mx-auto px-5 flex justify-between items-center md:justify-start md:space-x-10">
       <div class="flex justify-start lg:w-0 lg:flex-1">
         <a href="/">
@@ -24,8 +24,8 @@
         </a>
       </div>
       
-      <div class="-mr-2 -my-2 md:hidden">
-        <button type="button" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-light-grey focus:outline-none focus:ring-0">
+      <div class="-mr-2 -my-2 sm:hidden">
+        <button type="button" class="mobile-toggle p-2 inline-flex items-center justify-center text-light-grey focus:outline-none focus:ring-0">
           <span class="sr-only">Open menu</span>
           <svg class="h-6 w-6" x-description="Heroicon name: outline/menu" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
             <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
@@ -33,7 +33,7 @@
         </button>
       </div>
       
-      <div class="hidden md:flex items-center justify-end md:flex-1 lg:w-0 grid gap-7">
+      <div class="hidden sm:flex items-center justify-end sm:flex-1 rid gap-7">
         <a href="#" class="text-sm font-bold text-dark-grey hover:text-cloud-grey">
           Login
         </a>
@@ -41,6 +41,20 @@
           Register as a coach
         </a>
       </div>
+    </div>
+
+    <div class="mobile-menu flex sm:hidden flex-col space-y-10 items-center mt-auto mb-auto py-12 overflow-y-scroll overflow-y-auto transition-opacity ease-in-out opacity-0">
+      <a href="#" class="text-3xl font-medium text-light-grey hover:text-dark-grey">Search</a>
+
+      <a href="#" class="text-3xl font-medium text-light-grey hover:text-dark-grey">Login</a>
+
+      <a href="#" class="text-3xl font-medium text-light-grey hover:text-dark-grey">Register</a>
+
+      <a href="#" class="text-3xl font-medium text-light-grey hover:text-dark-grey">Terms</a>
+
+      <a href="#" class="text-3xl font-medium text-light-grey hover:text-dark-grey">Privacy</a>
+
+      <a href="#" class="text-3xl font-medium text-light-grey hover:text-dark-grey">About</a>
     </div>
   </header>
 
