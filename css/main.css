@@ -1041,9 +1041,6 @@ select {
   -ms-user-select: none;
   user-select: none;
 }
-.scroll-pr-20 {
-  scroll-padding-right: 5rem;
-}
 .appearance-none {
   -webkit-appearance: none;
   -moz-appearance: none;
@@ -1165,9 +1162,6 @@ select {
 }
 .overflow-hidden {
   overflow: hidden;
-}
-.overflow-x-auto {
-  overflow-x: auto;
 }
 .overflow-y-auto {
   overflow-y: auto;
