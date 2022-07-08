@@ -174,24 +174,31 @@
           </div>
         </div>
 
-        <div class="col-span-3 md:col-span-2 order-3 md:order-3">
-          <h2 class="text-xl font-bold text-dark-grey mb-4">About Bessie</h2>
+        <div class="relative col-span-3 md:col-span-2 order-3 md:order-3">
+          <div class="about-coach line-clamp-20 md:line-clamp-none">
+            <h2 class="text-xl font-bold text-dark-grey -mb-1">About Bessie</h2>
 
-          <p class="text-sm text-light-grey mt-5">Mindfulness-based coach and former startup director with more than 10 years experience in tech, within the mental healthy industry</p>
-          <p class="text-sm text-light-grey mt-5">As your coach, I'll help you get unstuck, relieve stress, gain confidence and clarity, and help you become the best version of yourself.</p>
-          <p class="text-sm text-light-grey mt-5">No gimmmicks. No quick tricks. I am with you on your journey. I am passionate about helping people achieve their goals. I was once that person, who thought the possible was impossible. I proved it wrong, and I’m here to prove your impossible wrong, too.<p>
-          <p class="text-sm text-light-grey mt-5">No matter your goal—whether you want to drink less, stop drinking, or frankly aren’t sure what you want—time away from alcohol is the most powerful tool at your disposal. A break gives you a clean slate to understand why you formed the habit, what’s getting in the way of change, and how to redefine your relationship with alcohol.</p>
-          <p class="text-sm text-light-grey mt-5">It starts with a 30-day challenge, and from there, you can continue on a year-long journey exploring the deeper work. Take a Break combines self-study lessons and live coaching to radically change your understanding of your desire and how to say no without deprivation. <br>Here’s a taste of what you’ll learn:</p>
-          <p class="text-sm text-light-grey mt-5">THE FOUR PILLARS<br>
-            The roadmap to retrain your brain and change your desire. Learn about urges, the habit, why it’s hard to follow through on your commitments, and how to manage your mind.</p>
-          <p class="text-sm text-light-grey mt-5">AVOIDING NUMBING<br>
-            Develop emotional resilience so that you can break the cycle of drinking, eating, shopping, working, or anything else that distracts from how you feel.</p>
-          <p class="text-sm text-light-grey mt-5">CONQUERING STRESS & OVERWHELM<br>
-            Access your innate ability to solve any problem so that you no longer search for a drink (or something else) to take the edge off.</p>
-          <p class="text-sm text-light-grey mt-5">CULTIVATING PLEASURE<br>
-            Unlock more enjoyment in your everyday life so that you stop relying on instant gratification and false pleasures to feel good.</p>
-          <p class="text-sm text-light-grey mt-5">RECONNECTING TO YOUR BODY<br>
-            Repair the connection with your physical self and what you see in the mirror so that you can feel better from the inside out.</p>
+            <p class="text-sm text-light-grey mt-5">Mindfulness-based coach and former startup director with more than 10 years experience in tech, within the mental healthy industry</p>
+            <p class="text-sm text-light-grey mt-5">As your coach, I'll help you get unstuck, relieve stress, gain confidence and clarity, and help you become the best version of yourself.</p>
+            <p class="text-sm text-light-grey mt-5">No gimmmicks. No quick tricks. I am with you on your journey. I am passionate about helping people achieve their goals. I was once that person, who thought the possible was impossible. I proved it wrong, and I’m here to prove your impossible wrong, too.<p>
+            <p class="text-sm text-light-grey mt-5">No matter your goal—whether you want to drink less, stop drinking, or frankly aren’t sure what you want—time away from alcohol is the most powerful tool at your disposal. A break gives you a clean slate to understand why you formed the habit, what’s getting in the way of change, and how to redefine your relationship with alcohol.</p>
+            <p class="text-sm text-light-grey mt-5">It starts with a 30-day challenge, and from there, you can continue on a year-long journey exploring the deeper work. Take a Break combines self-study lessons and live coaching to radically change your understanding of your desire and how to say no without deprivation. <br>Here’s a taste of what you’ll learn:</p>
+            <p class="text-sm text-light-grey mt-5">THE FOUR PILLARS<br>
+              The roadmap to retrain your brain and change your desire. Learn about urges, the habit, why it’s hard to follow through on your commitments, and how to manage your mind.</p>
+            <p class="text-sm text-light-grey mt-5">AVOIDING NUMBING<br>
+              Develop emotional resilience so that you can break the cycle of drinking, eating, shopping, working, or anything else that distracts from how you feel.</p>
+            <p class="text-sm text-light-grey mt-5">CONQUERING STRESS & OVERWHELM<br>
+              Access your innate ability to solve any problem so that you no longer search for a drink (or something else) to take the edge off.</p>
+            <p class="text-sm text-light-grey mt-5">CULTIVATING PLEASURE<br>
+              Unlock more enjoyment in your everyday life so that you stop relying on instant gratification and false pleasures to feel good.</p>
+            <p class="text-sm text-light-grey mt-5">RECONNECTING TO YOUR BODY<br>
+              Repair the connection with your physical self and what you see in the mirror so that you can feel better from the inside out.</p>
+          </div>
+
+          <div class="block md:hidden w-full absolute bottom-0 left-0">
+            <div class="block w-full h-16 bg-gradient-to-b from-white/[.5] to-white absolute left-0 bottom-0"></div>
+            <button class="relative z-10 read-more block w-[200px] mx-auto items-center py-2.5 px-8 rounded-full text-center text-sm font-bold text-white hover:text-white whitespace-nowrap bg-cloud-grey hover:bg-light-grey focus:outline-none">Read more</button>
+          </div>
         </div>
       </div>
     </div>
@@ -344,6 +351,14 @@
   <script>
     $('.mobile-toggle').click(function() {
       $('body').toggleClass('menu-open');
+    });
+
+    $('.read-more').click(function() {
+      $('.about-coach').toggleClass('line-clamp-none pb-16');
+
+      var text = $('.read-more').text();
+      $('.read-more').text(
+        text == "Read Less" ? "Read More" : "Read Less");
     });
   </script>
 </body>
